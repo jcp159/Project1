@@ -1,0 +1,16 @@
+The framework selenium is not a testing framework.  Selenium is a browser automation software.
+We happen to use selenium for testing purposes. It is far more than a testing tool. 
+very useful for testing purposes but anything you need to do in the browser, you can automate it with selenium
+
+Selenium WebDrive(the one we use)- The tool that is going to allows us to build a java
+application that will ultimately simulate an end user walking through a website performing
+our end-to-end testing, making use of the testing capabilities of cucumber and junit
+
+Selenium IDE - map out what actions a user is meant to take within the browser
+
+Selenium Grid - Useful if you need to perform automated browser task across multiple browsers
+across multiple systems at the same time. Essential creating a multithreaded multiprocessor
+automation environment
+
+Page Object Model- A design pattern that's used when working with selenium to help make it easy
+to facilitate interacting with elements in the browser through code

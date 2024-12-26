@@ -1,0 +1,1410 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Moon creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 185643800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on moon creation link",
+            "match": {
+              "location": "com.revature.steps.MoonCreationSteps.user_clicks_on_moon_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:47.408Z",
+        "before": [
+          {
+            "result": {
+              "duration": 98340800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "As a user I want to add new moons to the Planetarium so I can update my findings",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-moons-to-the-planetarium-so-i-can-update-my-findings;as-a-user-i-want-to-add-new-moons-to-the-planetarium-so-i-can-update-my-findings",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 165574400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user provides valid moon data",
+            "match": {
+              "location": "com.revature.steps.MoonCreationSteps.user_provides_valid_moon_data()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame\n  (Session info: chrome\u003d131.0.6778.205)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.25\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [af69c6f854ced6c409f180ad71cab62f, findChildElements {id\u003df.7186B5178A010109438FE12D806CE3B9.d.474184D204135CD3C22BC4CB7A6F90E6.e.28, value\u003dtd, using\u003dtag name}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54147/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: af69c6f854ced6c409f180ad71cab62f\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:370)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:203)\r\n\tat com.revature.steps.PlanetCreationSteps.the_table_will_refresh(PlanetCreationSteps.java:45)\r\n\tat ✽.the table will refresh(classpath:features/US4/MoonCreation.feature:10)\r\n",
+              "duration": 27093700,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "the table will refresh",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.the_table_will_refresh()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Moon creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 607544600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on moon creation link",
+            "match": {
+              "location": "com.revature.steps.MoonCreationSteps.user_clicks_on_moon_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:47.930Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13045300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Users can not create a moon with invalid moon name",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-moons-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-moon-with-invalid-moon-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 118410700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user provides invalid moon name \"This_is_my_moon_I_created______\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This_is_my_moon_I_created______\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.revature.steps.MoonCreationSteps.user_provides_invalid_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6020900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should get a browser alert saying \"Invalid moon name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid moon name\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Moon creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 607043900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on moon creation link",
+            "match": {
+              "location": "com.revature.steps.MoonCreationSteps.user_clicks_on_moon_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:48.680Z",
+        "before": [
+          {
+            "result": {
+              "duration": 16161700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Users can not create a moon with invalid moon name",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-moons-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-moon-with-invalid-moon-name;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 106368400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user provides invalid moon name \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.revature.steps.MoonCreationSteps.user_provides_invalid_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4013600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should get a browser alert saying \"Invalid moon name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid moon name\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Moon creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 612931200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on moon creation link",
+            "match": {
+              "location": "com.revature.steps.MoonCreationSteps.user_clicks_on_moon_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:49.420Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14048300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Users can not create a moon with invalid moon name",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-moons-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-moon-with-invalid-moon-name;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 109379000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user provides invalid moon name \"!moon!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"!moon!\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.revature.steps.MoonCreationSteps.user_provides_invalid_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5017500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should get a browser alert saying \"Invalid moon name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid moon name\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Moon creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 617364000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on moon creation link",
+            "match": {
+              "location": "com.revature.steps.MoonCreationSteps.user_clicks_on_moon_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:50.167Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17045100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Users can not create a moon with invalid moon name",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-moons-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-moon-with-invalid-moon-name;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 109379600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user provides invalid moon name \"Luna\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Luna\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.revature.steps.MoonCreationSteps.user_provides_invalid_moon_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 519473400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should get a browser alert saying \"invalid moon name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid moon name\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Moon creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 609215700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on moon creation link",
+            "match": {
+              "location": "com.revature.steps.MoonCreationSteps.user_clicks_on_moon_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:51.434Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22686600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Users can not create a moon with a invalid planet ID",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-moons-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-moon-with-a-invalid-planet-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 117407000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user provides invalid owning planet \"IPN1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IPN1\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.revature.steps.MoonCreationSteps.user_provides_invalid_owning_planet(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4014100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user should get a browser alert saying \"Invalid planet id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid planet id\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Moon creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 614537900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on moon creation link",
+            "match": {
+              "location": "com.revature.steps.MoonCreationSteps.user_clicks_on_moon_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:52.190Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12042000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Users can not create a moon with a invalid planet ID",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-moons-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-moon-with-a-invalid-planet-id;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 110984800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user provides invalid owning planet \"IPN2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IPN2\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.revature.steps.MoonCreationSteps.user_provides_invalid_owning_planet(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3010500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user should get a browser alert saying \"Invalid planet id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid planet id\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Moon creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 616914600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on moon creation link",
+            "match": {
+              "location": "com.revature.steps.MoonCreationSteps.user_clicks_on_moon_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:52.936Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12041800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Users can not create a moon with a invalid planet ID",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-moons-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-moon-with-a-invalid-planet-id;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 110382500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user provides invalid owning planet \"IPN3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IPN3\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.revature.steps.MoonCreationSteps.user_provides_invalid_owning_planet(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4014200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user should get a browser alert saying \"Invalid planet id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid planet id\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Moon creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 621183300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on moon creation link",
+            "match": {
+              "location": "com.revature.steps.MoonCreationSteps.user_clicks_on_moon_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:53.684Z",
+        "before": [
+          {
+            "result": {
+              "duration": 20990200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Users can not create a moon with a invalid planet ID",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-moons-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-moon-with-a-invalid-planet-id;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 115399700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user provides invalid owning planet \"IPN4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IPN4\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.revature.steps.MoonCreationSteps.user_provides_invalid_owning_planet(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4014300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user should get a browser alert saying \"Invalid planet id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid planet id\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Moon creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 620844300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on moon creation link",
+            "match": {
+              "location": "com.revature.steps.MoonCreationSteps.user_clicks_on_moon_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:54.450Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22089900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Users can not create a moon with a invalid file type",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-moons-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-moon-with-a-invalid-file-type;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 123427900,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user provides invalid moon file type \"any other file type than PNG \u0026 JPEG\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"any other file type than PNG \u0026 JPEG\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.MoonCreationSteps.user_provides_invalid_moon_file_type(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.25\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54147/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: af69c6f854ced6c409f180ad71cab62f\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(PlanetCreationSteps.java:73)\r\n\tat ✽.user should get a browser alert saying \"Invalid file type for moon picture\"(classpath:features/US4/MoonCreation.feature:37)\r\n",
+              "duration": 3077545300,
+              "status": "failed"
+            },
+            "line": 37,
+            "name": "user should get a browser alert saying \"Invalid file type for moon picture\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid file type for moon picture\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "user will be redirected to Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_will_be_redirected_to_Home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "As a user I want to add new moons to the Planetarium so I can update my findings",
+    "description": "",
+    "id": "as-a-user-i-want-to-add-new-moons-to-the-planetarium-so-i-can-update-my-findings",
+    "keyword": "Feature",
+    "uri": "classpath:features/US4/MoonCreation.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Planet creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 75257900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.the_user_is_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 129448100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on planet creation link",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_clicks_on_planet_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:58.300Z",
+        "before": [
+          {
+            "result": {
+              "duration": 16016800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Users can create a planet with valid credentials",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-planets-to-the-planetarium-so-i-can-update-my-findings;users-can-create-a-planet-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 65226600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user provides valid data",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_provides_valid_data()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame\n  (Session info: chrome\u003d131.0.6778.205)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.25\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [af69c6f854ced6c409f180ad71cab62f, findChildElements {id\u003df.7186B5178A010109438FE12D806CE3B9.d.2D8A101BAD5D0582F44460B9E1C6E1C5.e.368, value\u003dtd, using\u003dtag name}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54147/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: af69c6f854ced6c409f180ad71cab62f\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:370)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:203)\r\n\tat com.revature.steps.PlanetCreationSteps.the_table_will_refresh(PlanetCreationSteps.java:45)\r\n\tat ✽.the table will refresh(classpath:features/US4/PlanetCreation.feature:11)\r\n",
+              "duration": 67232600,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "the table will refresh",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.the_table_will_refresh()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Planet creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 78271600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.the_user_is_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 132459000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on planet creation link",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_clicks_on_planet_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:58.660Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13044400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Users can not create a planet with invalid planet name",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-planets-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-planet-with-invalid-planet-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 69240500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user provides invalid name \"This_is_my_planet_I_created_pol\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This_is_my_planet_I_created_pol\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_provides_invalid_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4013800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should get a browser alert saying \"Invalid planet name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid planet name\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15052200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user will be redirected to Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_will_be_redirected_to_Home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Planet creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 80277800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.the_user_is_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 134466300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on planet creation link",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_clicks_on_planet_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:58.976Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12424900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Users can not create a planet with invalid planet name",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-planets-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-planet-with-invalid-planet-name;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 48166700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user provides invalid name \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_provides_invalid_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5017800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should get a browser alert saying \"Invalid planet name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid planet name\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10034800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user will be redirected to Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_will_be_redirected_to_Home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Planet creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 88305100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.the_user_is_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 106368800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on planet creation link",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_clicks_on_planet_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:59.270Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13045700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Users can not create a planet with invalid planet name",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-planets-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-planet-with-invalid-planet-name;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 70244000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user provides invalid name \"!planet!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"!planet!\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_provides_invalid_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4013500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should get a browser alert saying \"Invalid planet name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid planet name\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23079800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user will be redirected to Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_will_be_redirected_to_Home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Planet creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 77269100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.the_user_is_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 126438300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on planet creation link",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_clicks_on_planet_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:29:59.578Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13044900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Users can not create a planet with invalid planet name",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-planets-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-planet-with-invalid-planet-name;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 48166100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user provides invalid name \"Earth\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Earth\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_provides_invalid_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 511100500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should get a browser alert saying \"Invalid planet name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid planet name\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7024700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user will be redirected to Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_will_be_redirected_to_Home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Planet creation starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 80278600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.the_user_is_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 101350900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on planet creation link",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_clicks_on_planet_creation_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T14:30:00.365Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13045400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Users can not create a planet with invalid file type",
+        "description": "",
+        "id": "as-a-user-i-want-to-add-new-planets-to-the-planetarium-so-i-can-update-my-findings;users-can-not-create-a-planet-with-invalid-file-type;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 81281400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user provides invalid file type \"any other file type than PNG \u0026 JPEG\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"any other file type than PNG \u0026 JPEG\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_provides_invalid_file_type(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.25\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54147/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: af69c6f854ced6c409f180ad71cab62f\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(PlanetCreationSteps.java:73)\r\n\tat ✽.user should get a browser alert saying \"Invalid file type for planet picture\"(classpath:features/US4/PlanetCreation.feature:28)\r\n",
+              "duration": 3077948500,
+              "status": "failed"
+            },
+            "line": 28,
+            "name": "user should get a browser alert saying \"Invalid file type for planet picture\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid file type for planet picture\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "user will be redirected to Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.user_will_be_redirected_to_Home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "As a user I want to add new planets to the Planetarium so I can update my findings",
+    "description": "",
+    "id": "as-a-user-i-want-to-add-new-planets-to-the-planetarium-so-i-can-update-my-findings",
+    "keyword": "Feature",
+    "uri": "classpath:features/US4/PlanetCreation.feature",
+    "tags": []
+  }
+]
