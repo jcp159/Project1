@@ -7,7 +7,7 @@ Feature: As a user I want to add new moons to the Planetarium so I can update my
     #Happy Path
     Scenario: As a user I want to add new moons to the Planetarium so I can update my findings
     When    user provides valid moon data
-    Then    the table will refresh
+    Then    the table will refresh with new moon added
 
     #Sad Path  
     Scenario Outline: Users can not create a moon with invalid moon name

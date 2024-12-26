@@ -3,7 +3,13 @@ package com.revature.steps;
 import com.revature.TestRunner;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.time.Duration;
+import java.util.List;
 
 public class PlanetDeletionSteps {
     @When("user clicks on planet deletion")
@@ -21,16 +27,20 @@ public class PlanetDeletionSteps {
 
     @Then("table will refresh")
     public void table_will_refresh() {
-        // Write code here that turns the phrase above into concrete actions
-        TestRunner.wait.until(ExpectedConditions.titleIs("Home"));
+
+        TestRunner.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[2]/table/tbody/tr[3]")));
+        //TestRunner.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        //List<WebElement> tableRows = TestRunner.driver.findElements(By.xpath("html/body/div[2]/table/tbody/tr[2]"));
+        String expectedPlanetInfo = "planet 2 Mars 1";
+        String actualPlanetInfo = TestRunner.homePage.returnUpdatedRowsForPlanetDeletion().get(0).getText();
+        System.out.println("this is expected planet info " + expectedPlanetInfo);
+        System.out.println("this is actual planet info " + actualPlanetInfo);
+        Assert.assertEquals(expectedPlanetInfo,actualPlanetInfo);
+
+
     }
 
-    @Then("page will be redirected to Home page")
-    public void page_will_be_redirected_to_Home_page() {
-        // Write code here that turns the phrase above into concrete actions
-        System.out.println("This is home title: " + TestRunner.homePage.getHomeTitle());
-        TestRunner.homePage.getHomeTitle();
-    }
+
 
     @When("user provides invalid planet name {string}")
     public void user_provides_invalid_planet_name(String string) {

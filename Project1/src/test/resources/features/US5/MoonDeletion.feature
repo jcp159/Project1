@@ -8,14 +8,12 @@ Feature: As a user I want to remove moons from the Planetarium so I can correct 
     #Happy Path
     Scenario: Users can delete an existing moon 
         When    user provides valid moon data to be deleted
-        And     table will refresh
-        And     page will be redirected to Home page
+        And     table will refresh with moon deleted
 
     #Sad Path
     Scenario Outline: Users can not delete a moon that does not exist
         When    user provides invalid moon name to be deleted "<moonName>"
         Then    user should get a browser alert saying "<alert>"
-        And     page will be redirected to Home page
 
     Examples:
     |      moonName   |        alert      |

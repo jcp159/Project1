@@ -58,15 +58,38 @@ public class HomePage {
     @FindBy(id = "deleteButton")
     private WebElement deleteButton;
 
+    @FindBy(xpath = "html/body/div[2]/table/tbody/tr[4]")
+    List<WebElement> updateRowsForPlanetCreation;
 
+    @FindBy(xpath = "html/body/div[2]/table/tbody/tr[2]")
+    List<WebElement> updateRowsForPlanetDeletion;
 
-    private Alert alert;
+    @FindBy(xpath = "html/body/div[2]/table/tbody/tr[6]")
+    List<WebElement> updateRowsForMoonCreation;
 
-    private String alertMessage;
+    @FindBy(xpath = "html/body/div[2]/table/tbody/tr[4]")
+    List<WebElement> updatedRowsForMoonDeletion;
+
 
 
     @FindBy(tagName = "tr")
     private List<WebElement> tableRows;
+
+    public List<WebElement> returnUpdateRowsForPlanetCreation() {
+        return updateRowsForPlanetCreation;
+    }
+
+    public List<WebElement> returnUpdatedRowsForPlanetDeletion () {
+        return updateRowsForPlanetDeletion;
+    }
+
+    public List<WebElement> returnUpdatedRowsForMoonCreation() {
+        return updateRowsForMoonCreation;
+    }
+
+    public List<WebElement> returnUpdatedRowsForMoonDeletion() {
+        return updatedRowsForMoonDeletion;
+    }
 
     public HomePage(WebDriver driver) {
         this.driver = driver;

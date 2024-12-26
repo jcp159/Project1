@@ -5,7 +5,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.time.Duration;
+import java.util.List;
 
 public class MoonCreationSteps {
     @When("user clicks on moon creation link")
@@ -22,6 +27,17 @@ public class MoonCreationSteps {
         TestRunner.homePage.setUpValidMoonCredentials();
     }
 
+    @Then("the table will refresh with new moon added")
+    public void the_table_will_refresh_with_new_moon_added() {
+        TestRunner.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[2]/table/tbody/tr[6]")));
+        //TestRunner.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+        //List<WebElement> tableRows = TestRunner.driver.findElements(By.xpath("html/body/div[2]/table/tbody/tr[6]"));
+        String expectedMoonInfo = "moon 3 Big Moon 1";
+        String actualMoonInfo = TestRunner.homePage.returnUpdatedRowsForMoonCreation().get(0).getText();
+        System.out.println("this is expected moon info " + expectedMoonInfo);
+        System.out.println("this is actual moon info " + actualMoonInfo);
+        Assert.assertEquals(expectedMoonInfo,actualMoonInfo);
+    }
 
     @When("user provides invalid moon name {string}")
     public void user_provides_invalid_moon_name(String string) {

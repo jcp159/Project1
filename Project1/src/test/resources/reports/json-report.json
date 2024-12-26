@@ -3,6 +3,2302 @@
     "line": 2,
     "elements": [
       {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 28097300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56195200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:36.496Z",
+        "before": [
+          {
+            "result": {
+              "duration": 109422500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Users can register a new account with valid credentials",
+        "description": "",
+        "id": "user-registration;users-can-register-a-new-account-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 69239900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user provides a valid username",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_valid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29098400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user provides a valid password",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11038400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 523796300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user should get a browser alert saying \"Account created successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account created successfully\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14041600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user should be redirected to the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_be_redirected_to_the_login_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8027500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37126700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:37.371Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12042500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Users can not register a new account with invalid credentials",
+        "description": "",
+        "id": "user-registration;users-can-not-register-a-new-account-with-invalid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 21072800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user provides a invalid username \"Batman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24083600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user provides a invalid password \"Krypton-was_2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Krypton-was_2000\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7024400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.25\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64788}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64788/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 9dc95f9ce164fa016baeff5184061bc5\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(RegistrationSteps.java:46)\r\n\tat ✽.the user should get a browser alert saying \"Invalid username\"(classpath:features/US1/Registration.feature:23)\r\n",
+              "duration": 3081266700,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "the user should get a browser alert saying \"Invalid username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid username\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "user should stay on registration page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.user_should_stay_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13045600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36125100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:40.576Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11038400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Users can not register a new account with invalid credentials",
+        "description": "",
+        "id": "user-registration;users-can-not-register-a-new-account-with-invalid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 22076900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user provides a invalid username \"Bane\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bane\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25086200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user provides a invalid password \"Krypton-was_2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Krypton-was_2000\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10035300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4014000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should get a browser alert saying \"Invalid username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid username\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2006700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should stay on registration page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.user_should_stay_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12038600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36124800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:40.703Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11479600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Users can not register a new account with invalid credentials",
+        "description": "",
+        "id": "user-registration;users-can-not-register-a-new-account-with-invalid-credentials;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 31107800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user provides a invalid username \"wonder_woman_for_the_DC_theming\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wonder_woman_for_the_DC_theming\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27094100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user provides a invalid password \"Krypton-was_2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Krypton-was_2000\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9031400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3010100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should get a browser alert saying \"Invalid username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid username\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1003600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should stay on registration page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.user_should_stay_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 15052100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36125900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:40.839Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11753900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Users can not register a new account with invalid credentials",
+        "description": "",
+        "id": "user-registration;users-can-not-register-a-new-account-with-invalid-credentials;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25086800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user provides a invalid username \"2face\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2face\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25086200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user provides a invalid password \"Krypton-was_2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Krypton-was_2000\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8027900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3010600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should get a browser alert saying \"Invalid username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid username\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2007000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should stay on registration page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.user_should_stay_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 14049000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 41142800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:40.970Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12039300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Users can not register a new account with invalid credentials",
+        "description": "",
+        "id": "user-registration;users-can-not-register-a-new-account-with-invalid-credentials;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25087000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user provides a invalid username \"joker!!!!!!?)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"joker!!!!!!?)\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28097200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user provides a invalid password \"Krypton-was_2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Krypton-was_2000\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7024400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4014000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should get a browser alert saying \"Invalid username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid username\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2007200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should stay on registration page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.user_should_stay_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 30089900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 45921000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:41.107Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11902400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Users can not register a new account with invalid credentials",
+        "description": "",
+        "id": "user-registration;users-can-not-register-a-new-account-with-invalid-credentials;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 26089500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user provides a invalid username \"Super_man-2001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Super_man-2001\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21073800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user provides a invalid password \"b0Ts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"b0Ts\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7024300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3010000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should get a browser alert saying \"Invalid password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid password\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2007200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should stay on registration page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.user_should_stay_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 19066200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42145900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:41.260Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12041900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Users can not register a new account with invalid credentials",
+        "description": "",
+        "id": "user-registration;users-can-not-register-a-new-account-with-invalid-credentials;;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 26090800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user provides a invalid username \"Super_man-2001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Super_man-2001\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30103800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user provides a invalid password \"AlfredIsTheBestButlerToExist111\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AlfredIsTheBestButlerToExist111\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8028200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3010500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should get a browser alert saying \"Invalid password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid password\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2007300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should stay on registration page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.user_should_stay_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17059200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37128400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:41.406Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12041300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Users can not register a new account with invalid credentials",
+        "description": "",
+        "id": "user-registration;users-can-not-register-a-new-account-with-invalid-credentials;;9",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 29101000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user provides a invalid username \"Super_man-2001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Super_man-2001\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22076600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user provides a invalid password \"3atman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3atman\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8027900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3009800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should get a browser alert saying \"Invalid password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid password\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2007100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should stay on registration page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.user_should_stay_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 16055400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 43149700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:41.539Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12042000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Users can not register a new account with invalid credentials",
+        "description": "",
+        "id": "user-registration;users-can-not-register-a-new-account-with-invalid-credentials;;10",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 26090900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user provides a invalid username \"Super_man-2001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Super_man-2001\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32111500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user provides a invalid password \"A1fredIsTheBestButlerToExist!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"A1fredIsTheBestButlerToExist!!\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8026900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3011100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should get a browser alert saying \"Invalid password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid password\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2006400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should stay on registration page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.user_should_stay_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 18062800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37128600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:41.684Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12041900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Users can not register a new account with invalid credentials",
+        "description": "",
+        "id": "user-registration;users-can-not-register-a-new-account-with-invalid-credentials;;11",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 27093900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user provides a invalid username \"Super_man-2001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Super_man-2001\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24083400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user provides a invalid password \"batman1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"batman1\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7024500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3010700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should get a browser alert saying \"Invalid password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid password\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2007200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should stay on registration page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.user_should_stay_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 15052300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 40139200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:41.817Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10956300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Users can not register a new account with invalid credentials",
+        "description": "",
+        "id": "user-registration;users-can-not-register-a-new-account-with-invalid-credentials;;12",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25087100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user provides a invalid username \"Super_man-2001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Super_man-2001\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23079900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user provides a invalid password \"BATMAN1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BATMAN1\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7024200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4013600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should get a browser alert saying \"Invalid password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid password\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2007400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should stay on registration page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.user_should_stay_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Registration Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 14048700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38132100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks the register link",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_clicks_the_register_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:41.947Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11536400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Users can not register a new account with invalid credentials",
+        "description": "",
+        "id": "user-registration;users-can-not-register-a-new-account-with-invalid-credentials;;13",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25060000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user provides a invalid username \"Super_man-2001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Super_man-2001\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21072900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user provides a invalid password \"Robin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Robin\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8027900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3010300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should get a browser alert saying \"Invalid password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid password\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1004100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should stay on registration page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.user_should_stay_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "User Registration",
+    "description": "    As a new user I want to open an account with the Planetarium so I can save my celestial findings",
+    "id": "user-registration",
+    "keyword": "Feature",
+    "uri": "classpath:features/US1/Registration.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Login Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13045400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:42.072Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13044800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Users can login with valid credentials",
+        "description": "",
+        "id": "user-login;users-can-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22706000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user provides a valid username for login page",
+            "match": {
+              "location": "com.revature.steps.LoginSteps.the_user_provides_a_valid_username_for_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25086500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user provides a valid password for login page",
+            "match": {
+              "location": "com.revature.steps.LoginSteps.the_user_provides_a_valid_password_for_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7024700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user submits the credentials for login page",
+            "match": {
+              "location": "com.revature.steps.LoginSteps.the_user_submits_the_credentials_for_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 528975100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user should be redirected to Home page",
+            "match": {
+              "location": "com.revature.steps.LoginSteps.the_user_should_be_redirected_to_Home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Login Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 15052300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:42.685Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10896400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Users can not login with invalid credentials",
+        "description": "",
+        "id": "user-login;users-can-not-login-with-invalid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 22076400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user provides a invalid username \"Batman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20069700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user provides a invalid password \"b0Ts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"b0Ts\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7024900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 515274000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user should get a browser alert saying \"Invalid credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid credentials\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11038500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user should be redirected to login page",
+            "match": {
+              "location": "com.revature.steps.LoginSteps.the_user_should_be_redirected_to_login_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Login Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9031700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:43.291Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13045000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Users can not login with invalid credentials",
+        "description": "",
+        "id": "user-login;users-can-not-login-with-invalid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 21072900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user provides a invalid username \"Robin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Robin\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25087400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user provides a invalid password \"Iamthenight1939\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Iamthenight1939\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8027400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 515482400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user should get a browser alert saying \"Invalid credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid credentials\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9031600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user should be redirected to login page",
+            "match": {
+              "location": "com.revature.steps.LoginSteps.the_user_should_be_redirected_to_login_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Login Starting Actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8020500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:43.894Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21589500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Users can not login with invalid credentials",
+        "description": "",
+        "id": "user-login;users-can-not-login-with-invalid-credentials;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 24084200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user provides a invalid username \"Robin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Robin\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20068900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user provides a invalid password \"b0Ts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"b0Ts\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_provides_a_invalid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8028600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user submits the credentials",
+            "match": {
+              "location": "com.revature.steps.RegistrationSteps.the_user_submits_the_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 512794500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user should get a browser alert saying \"Invalid credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid credentials\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.revature.steps.RegistrationSteps.the_user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10035000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user should be redirected to login page",
+            "match": {
+              "location": "com.revature.steps.LoginSteps.the_user_should_be_redirected_to_login_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "User Login",
+    "description": "    As a user I want to securely access my account so I can interact with the Planetarium in a secure environment",
+    "id": "user-login",
+    "keyword": "Feature",
+    "uri": "classpath:features/US2/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-12-26T21:16:44.501Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21298200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Login should allow for viewing owned resources",
+        "description": "",
+        "id": "view-user-planets-and-moons;login-should-allow-for-viewing-owned-resources",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 61211900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user login is successful",
+            "match": {
+              "location": "com.revature.steps.ViewOwnedResourcesSteps.the_user_login_is_successful()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 143734300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should be at home page and will be able to see planets and moons",
+            "match": {
+              "location": "com.revature.steps.ViewOwnedResourcesSteps.user_should_be_at_home_page_and_will_be_able_to_see_planets_and_moons()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:16:44.729Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12042000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Users not logged in should not be able to view home page and its resources",
+        "description": "",
+        "id": "view-user-planets-and-moons;users-not-logged-in-should-not-be-able-to-view-home-page-and-its-resources",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21073200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user login is unsuccessful",
+            "match": {
+              "location": "com.revature.steps.ViewOwnedResourcesSteps.the_user_login_is_unsuccessful()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2006900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should not be able to access the home page",
+            "match": {
+              "location": "com.revature.steps.ViewOwnedResourcesSteps.user_should_not_be_able_to_access_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "View User Planets and Moons",
+    "description": "    As a user I want to see my planets and moons added to the Planetarium so I can track my findings",
+    "id": "view-user-planets-and-moons",
+    "keyword": "Feature",
+    "uri": "classpath:features/US3/ViewOwnedResources.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
         "line": 4,
         "name": "Moon creation starting actions",
         "description": "",
@@ -11,7 +2307,7 @@
         "steps": [
           {
             "result": {
-              "duration": 185643800,
+              "duration": 614861200,
               "status": "passed"
             },
             "line": 5,
@@ -24,11 +2320,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:47.408Z",
+        "start_timestamp": "2024-12-26T21:16:44.766Z",
         "before": [
           {
             "result": {
-              "duration": 98340800,
+              "duration": 13560600,
               "status": "passed"
             },
             "match": {
@@ -45,7 +2341,7 @@
         "steps": [
           {
             "result": {
-              "duration": 165574400,
+              "duration": 126247500,
               "status": "passed"
             },
             "line": 9,
@@ -57,14 +2353,13 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame\n  (Session info: chrome\u003d131.0.6778.205)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.25\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [af69c6f854ced6c409f180ad71cab62f, findChildElements {id\u003df.7186B5178A010109438FE12D806CE3B9.d.474184D204135CD3C22BC4CB7A6F90E6.e.28, value\u003dtd, using\u003dtag name}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54147/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: af69c6f854ced6c409f180ad71cab62f\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:370)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:203)\r\n\tat com.revature.steps.PlanetCreationSteps.the_table_will_refresh(PlanetCreationSteps.java:45)\r\n\tat ✽.the table will refresh(classpath:features/US4/MoonCreation.feature:10)\r\n",
-              "duration": 27093700,
-              "status": "failed"
+              "duration": 70243300,
+              "status": "passed"
             },
             "line": 10,
-            "name": "the table will refresh",
+            "name": "the table will refresh with new moon added",
             "match": {
-              "location": "com.revature.steps.PlanetCreationSteps.the_table_will_refresh()"
+              "location": "com.revature.steps.MoonCreationSteps.the_table_will_refresh_with_new_moon_added()"
             },
             "keyword": "Then "
           }
@@ -79,7 +2374,7 @@
         "steps": [
           {
             "result": {
-              "duration": 607544600,
+              "duration": 607461000,
               "status": "passed"
             },
             "line": 5,
@@ -92,11 +2387,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:47.930Z",
+        "start_timestamp": "2024-12-26T21:16:45.595Z",
         "before": [
           {
             "result": {
-              "duration": 13045300,
+              "duration": 13045700,
               "status": "passed"
             },
             "match": {
@@ -113,7 +2408,7 @@
         "steps": [
           {
             "result": {
-              "duration": 118410700,
+              "duration": 114396500,
               "status": "passed"
             },
             "line": 14,
@@ -131,7 +2426,7 @@
           },
           {
             "result": {
-              "duration": 6020900,
+              "duration": 4014100,
               "status": "passed"
             },
             "line": 15,
@@ -158,7 +2453,7 @@
         "steps": [
           {
             "result": {
-              "duration": 607043900,
+              "duration": 622376600,
               "status": "passed"
             },
             "line": 5,
@@ -171,11 +2466,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:48.680Z",
+        "start_timestamp": "2024-12-26T21:16:46.336Z",
         "before": [
           {
             "result": {
-              "duration": 16161700,
+              "duration": 12747000,
               "status": "passed"
             },
             "match": {
@@ -192,7 +2487,7 @@
         "steps": [
           {
             "result": {
-              "duration": 106368400,
+              "duration": 111387000,
               "status": "passed"
             },
             "line": 14,
@@ -210,7 +2505,7 @@
           },
           {
             "result": {
-              "duration": 4013600,
+              "duration": 3010000,
               "status": "passed"
             },
             "line": 15,
@@ -237,7 +2532,7 @@
         "steps": [
           {
             "result": {
-              "duration": 612931200,
+              "duration": 610455400,
               "status": "passed"
             },
             "line": 5,
@@ -250,11 +2545,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:49.420Z",
+        "start_timestamp": "2024-12-26T21:16:47.089Z",
         "before": [
           {
             "result": {
-              "duration": 14048300,
+              "duration": 12042100,
               "status": "passed"
             },
             "match": {
@@ -271,7 +2566,7 @@
         "steps": [
           {
             "result": {
-              "duration": 109379000,
+              "duration": 104361600,
               "status": "passed"
             },
             "line": 14,
@@ -289,7 +2584,7 @@
           },
           {
             "result": {
-              "duration": 5017500,
+              "duration": 3010400,
               "status": "passed"
             },
             "line": 15,
@@ -316,7 +2611,7 @@
         "steps": [
           {
             "result": {
-              "duration": 617364000,
+              "duration": 608268800,
               "status": "passed"
             },
             "line": 5,
@@ -329,11 +2624,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:50.167Z",
+        "start_timestamp": "2024-12-26T21:16:47.821Z",
         "before": [
           {
             "result": {
-              "duration": 17045100,
+              "duration": 13045500,
               "status": "passed"
             },
             "match": {
@@ -350,7 +2645,7 @@
         "steps": [
           {
             "result": {
-              "duration": 109379600,
+              "duration": 102513500,
               "status": "passed"
             },
             "line": 14,
@@ -368,7 +2663,7 @@
           },
           {
             "result": {
-              "duration": 519473400,
+              "duration": 519035100,
               "status": "passed"
             },
             "line": 15,
@@ -395,7 +2690,7 @@
         "steps": [
           {
             "result": {
-              "duration": 609215700,
+              "duration": 615613600,
               "status": "passed"
             },
             "line": 5,
@@ -408,11 +2703,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:51.434Z",
+        "start_timestamp": "2024-12-26T21:16:49.066Z",
         "before": [
           {
             "result": {
-              "duration": 22686600,
+              "duration": 16056000,
               "status": "passed"
             },
             "match": {
@@ -429,7 +2724,7 @@
         "steps": [
           {
             "result": {
-              "duration": 117407000,
+              "duration": 102352100,
               "status": "passed"
             },
             "line": 25,
@@ -447,7 +2742,7 @@
           },
           {
             "result": {
-              "duration": 4014100,
+              "duration": 3010300,
               "status": "passed"
             },
             "line": 26,
@@ -474,7 +2769,7 @@
         "steps": [
           {
             "result": {
-              "duration": 614537900,
+              "duration": 109889000,
               "status": "passed"
             },
             "line": 5,
@@ -487,11 +2782,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:52.190Z",
+        "start_timestamp": "2024-12-26T21:16:49.805Z",
         "before": [
           {
             "result": {
-              "duration": 12042000,
+              "duration": 12229700,
               "status": "passed"
             },
             "match": {
@@ -508,7 +2803,7 @@
         "steps": [
           {
             "result": {
-              "duration": 110984800,
+              "duration": 115397400,
               "status": "passed"
             },
             "line": 25,
@@ -526,7 +2821,7 @@
           },
           {
             "result": {
-              "duration": 3010500,
+              "duration": 2006900,
               "status": "passed"
             },
             "line": 26,
@@ -553,7 +2848,7 @@
         "steps": [
           {
             "result": {
-              "duration": 616914600,
+              "duration": 612987000,
               "status": "passed"
             },
             "line": 5,
@@ -566,11 +2861,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:52.936Z",
+        "start_timestamp": "2024-12-26T21:16:50.048Z",
         "before": [
           {
             "result": {
-              "duration": 12041800,
+              "duration": 12043400,
               "status": "passed"
             },
             "match": {
@@ -587,7 +2882,7 @@
         "steps": [
           {
             "result": {
-              "duration": 110382500,
+              "duration": 106067200,
               "status": "passed"
             },
             "line": 25,
@@ -605,7 +2900,7 @@
           },
           {
             "result": {
-              "duration": 4014200,
+              "duration": 3010400,
               "status": "passed"
             },
             "line": 26,
@@ -632,7 +2927,7 @@
         "steps": [
           {
             "result": {
-              "duration": 621183300,
+              "duration": 611000800,
               "status": "passed"
             },
             "line": 5,
@@ -645,11 +2940,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:53.684Z",
+        "start_timestamp": "2024-12-26T21:16:50.784Z",
         "before": [
           {
             "result": {
-              "duration": 20990200,
+              "duration": 11975300,
               "status": "passed"
             },
             "match": {
@@ -666,7 +2961,7 @@
         "steps": [
           {
             "result": {
-              "duration": 115399700,
+              "duration": 110383000,
               "status": "passed"
             },
             "line": 25,
@@ -684,7 +2979,7 @@
           },
           {
             "result": {
-              "duration": 4014300,
+              "duration": 3010100,
               "status": "passed"
             },
             "line": 26,
@@ -711,7 +3006,7 @@
         "steps": [
           {
             "result": {
-              "duration": 620844300,
+              "duration": 612671800,
               "status": "passed"
             },
             "line": 5,
@@ -724,11 +3019,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:54.450Z",
+        "start_timestamp": "2024-12-26T21:16:51.523Z",
         "before": [
           {
             "result": {
-              "duration": 22089900,
+              "duration": 12041500,
               "status": "passed"
             },
             "match": {
@@ -745,7 +3040,7 @@
         "steps": [
           {
             "result": {
-              "duration": 123427900,
+              "duration": 110376900,
               "status": "passed"
             },
             "line": 36,
@@ -763,8 +3058,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.25\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54147/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: af69c6f854ced6c409f180ad71cab62f\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(PlanetCreationSteps.java:73)\r\n\tat ✽.user should get a browser alert saying \"Invalid file type for moon picture\"(classpath:features/US4/MoonCreation.feature:37)\r\n",
-              "duration": 3077545300,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.25\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64788}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64788/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 9dc95f9ce164fa016baeff5184061bc5\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(PlanetCreationSteps.java:67)\r\n\tat ✽.user should get a browser alert saying \"Invalid file type for moon picture\"(classpath:features/US4/MoonCreation.feature:37)\r\n",
+              "duration": 3060387300,
               "status": "failed"
             },
             "line": 37,
@@ -813,7 +3108,7 @@
         "steps": [
           {
             "result": {
-              "duration": 75257900,
+              "duration": 75257300,
               "status": "passed"
             },
             "line": 5,
@@ -825,7 +3120,7 @@
           },
           {
             "result": {
-              "duration": 129448100,
+              "duration": 129794900,
               "status": "passed"
             },
             "line": 6,
@@ -838,11 +3133,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:58.300Z",
+        "start_timestamp": "2024-12-26T21:16:55.322Z",
         "before": [
           {
             "result": {
-              "duration": 16016800,
+              "duration": 20220300,
               "status": "passed"
             },
             "match": {
@@ -859,7 +3154,7 @@
         "steps": [
           {
             "result": {
-              "duration": 65226600,
+              "duration": 61212700,
               "status": "passed"
             },
             "line": 10,
@@ -871,9 +3166,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame\n  (Session info: chrome\u003d131.0.6778.205)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.25\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [af69c6f854ced6c409f180ad71cab62f, findChildElements {id\u003df.7186B5178A010109438FE12D806CE3B9.d.2D8A101BAD5D0582F44460B9E1C6E1C5.e.368, value\u003dtd, using\u003dtag name}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54147/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: af69c6f854ced6c409f180ad71cab62f\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:370)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:203)\r\n\tat com.revature.steps.PlanetCreationSteps.the_table_will_refresh(PlanetCreationSteps.java:45)\r\n\tat ✽.the table will refresh(classpath:features/US4/PlanetCreation.feature:11)\r\n",
-              "duration": 67232600,
-              "status": "failed"
+              "duration": 78529100,
+              "status": "passed"
             },
             "line": 11,
             "name": "the table will refresh",
@@ -893,7 +3187,7 @@
         "steps": [
           {
             "result": {
-              "duration": 78271600,
+              "duration": 68236600,
               "status": "passed"
             },
             "line": 5,
@@ -905,7 +3199,7 @@
           },
           {
             "result": {
-              "duration": 132459000,
+              "duration": 127441800,
               "status": "passed"
             },
             "line": 6,
@@ -918,11 +3212,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:58.660Z",
+        "start_timestamp": "2024-12-26T21:16:55.689Z",
         "before": [
           {
             "result": {
-              "duration": 13044400,
+              "duration": 12018600,
               "status": "passed"
             },
             "match": {
@@ -939,7 +3233,7 @@
         "steps": [
           {
             "result": {
-              "duration": 69240500,
+              "duration": 55191500,
               "status": "passed"
             },
             "line": 15,
@@ -957,7 +3251,7 @@
           },
           {
             "result": {
-              "duration": 4013800,
+              "duration": 3010500,
               "status": "passed"
             },
             "line": 16,
@@ -975,7 +3269,7 @@
           },
           {
             "result": {
-              "duration": 15052200,
+              "duration": 6020900,
               "status": "passed"
             },
             "line": 17,
@@ -996,7 +3290,7 @@
         "steps": [
           {
             "result": {
-              "duration": 80277800,
+              "duration": 67232800,
               "status": "passed"
             },
             "line": 5,
@@ -1008,7 +3302,7 @@
           },
           {
             "result": {
-              "duration": 134466300,
+              "duration": 124431600,
               "status": "passed"
             },
             "line": 6,
@@ -1021,11 +3315,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:58.976Z",
+        "start_timestamp": "2024-12-26T21:16:55.964Z",
         "before": [
           {
             "result": {
-              "duration": 12424900,
+              "duration": 12041900,
               "status": "passed"
             },
             "match": {
@@ -1042,7 +3336,7 @@
         "steps": [
           {
             "result": {
-              "duration": 48166700,
+              "duration": 43149600,
               "status": "passed"
             },
             "line": 15,
@@ -1060,7 +3354,7 @@
           },
           {
             "result": {
-              "duration": 5017800,
+              "duration": 3010700,
               "status": "passed"
             },
             "line": 16,
@@ -1078,7 +3372,7 @@
           },
           {
             "result": {
-              "duration": 10034800,
+              "duration": 7024000,
               "status": "passed"
             },
             "line": 17,
@@ -1099,7 +3393,7 @@
         "steps": [
           {
             "result": {
-              "duration": 88305100,
+              "duration": 69240000,
               "status": "passed"
             },
             "line": 5,
@@ -1111,7 +3405,7 @@
           },
           {
             "result": {
-              "duration": 106368800,
+              "duration": 123427900,
               "status": "passed"
             },
             "line": 6,
@@ -1124,11 +3418,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:59.270Z",
+        "start_timestamp": "2024-12-26T21:16:56.224Z",
         "before": [
           {
             "result": {
-              "duration": 13045700,
+              "duration": 71580900,
               "status": "passed"
             },
             "match": {
@@ -1145,7 +3439,7 @@
         "steps": [
           {
             "result": {
-              "duration": 70244000,
+              "duration": 45156800,
               "status": "passed"
             },
             "line": 15,
@@ -1163,7 +3457,7 @@
           },
           {
             "result": {
-              "duration": 4013500,
+              "duration": 3010200,
               "status": "passed"
             },
             "line": 16,
@@ -1181,7 +3475,7 @@
           },
           {
             "result": {
-              "duration": 23079800,
+              "duration": 6020700,
               "status": "passed"
             },
             "line": 17,
@@ -1202,7 +3496,7 @@
         "steps": [
           {
             "result": {
-              "duration": 77269100,
+              "duration": 70243600,
               "status": "passed"
             },
             "line": 5,
@@ -1214,7 +3508,7 @@
           },
           {
             "result": {
-              "duration": 126438300,
+              "duration": 126438400,
               "status": "passed"
             },
             "line": 6,
@@ -1227,11 +3521,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:29:59.578Z",
+        "start_timestamp": "2024-12-26T21:16:56.545Z",
         "before": [
           {
             "result": {
-              "duration": 13044900,
+              "duration": 11695600,
               "status": "passed"
             },
             "match": {
@@ -1248,7 +3542,7 @@
         "steps": [
           {
             "result": {
-              "duration": 48166100,
+              "duration": 43149700,
               "status": "passed"
             },
             "line": 15,
@@ -1266,7 +3560,7 @@
           },
           {
             "result": {
-              "duration": 511100500,
+              "duration": 506654300,
               "status": "passed"
             },
             "line": 16,
@@ -1284,7 +3578,7 @@
           },
           {
             "result": {
-              "duration": 7024700,
+              "duration": 7024100,
               "status": "passed"
             },
             "line": 17,
@@ -1305,7 +3599,7 @@
         "steps": [
           {
             "result": {
-              "duration": 80278600,
+              "duration": 71246600,
               "status": "passed"
             },
             "line": 5,
@@ -1317,7 +3611,7 @@
           },
           {
             "result": {
-              "duration": 101350900,
+              "duration": 123428200,
               "status": "passed"
             },
             "line": 6,
@@ -1330,11 +3624,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-26T14:30:00.365Z",
+        "start_timestamp": "2024-12-26T21:16:57.313Z",
         "before": [
           {
             "result": {
-              "duration": 13045400,
+              "duration": 21576900,
               "status": "passed"
             },
             "match": {
@@ -1351,7 +3645,7 @@
         "steps": [
           {
             "result": {
-              "duration": 81281400,
+              "duration": 55191200,
               "status": "passed"
             },
             "line": 27,
@@ -1369,8 +3663,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.25\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54147/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: af69c6f854ced6c409f180ad71cab62f\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(PlanetCreationSteps.java:73)\r\n\tat ✽.user should get a browser alert saying \"Invalid file type for planet picture\"(classpath:features/US4/PlanetCreation.feature:28)\r\n",
-              "duration": 3077948500,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.25\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\Owner\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64788}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64788/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 9dc95f9ce164fa016baeff5184061bc5\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(PlanetCreationSteps.java:67)\r\n\tat ✽.user should get a browser alert saying \"Invalid file type for planet picture\"(classpath:features/US4/PlanetCreation.feature:28)\r\n",
+              "duration": 3066524200,
               "status": "failed"
             },
             "line": 28,
@@ -1405,6 +3699,368 @@
     "id": "as-a-user-i-want-to-add-new-planets-to-the-planetarium-so-i-can-update-my-findings",
     "keyword": "Feature",
     "uri": "classpath:features/US4/PlanetCreation.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Moon deletion starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 67233000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.the_user_is_on_Home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110383000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks delete button",
+            "match": {
+              "location": "com.revature.steps.MoonDeletionSteps.user_clicks_delete_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:17:00.655Z",
+        "before": [
+          {
+            "result": {
+              "duration": 16490900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Users can delete an existing moon",
+        "description": "",
+        "id": "as-a-user-i-want-to-remove-moons-from-the-planetarium-so-i-can-correct-my-findings;users-can-delete-an-existing-moon",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 97337500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user provides valid moon data to be deleted",
+            "match": {
+              "location": "com.revature.steps.MoonDeletionSteps.user_provides_valid_moon_data_to_be_deleted()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68131300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "table will refresh with moon deleted",
+            "match": {
+              "location": "com.revature.steps.MoonDeletionSteps.table_will_refresh_with_moon_deleted()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Moon deletion starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 66151900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.the_user_is_on_Home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 109943800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks delete button",
+            "match": {
+              "location": "com.revature.steps.MoonDeletionSteps.user_clicks_delete_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:17:01.018Z",
+        "before": [
+          {
+            "result": {
+              "duration": 123047600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Users can not delete a moon that does not exist",
+        "description": "",
+        "id": "as-a-user-i-want-to-remove-moons-from-the-planetarium-so-i-can-correct-my-findings;users-can-not-delete-a-moon-that-does-not-exist;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 88304900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user provides invalid moon name to be deleted \"non existing moon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"non existing moon\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.revature.steps.MoonDeletionSteps.user_provides_invalid_moon_name_to_be_deleted(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 515681800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should get a browser alert saying \"Invalid moon name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid moon name\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a user I want to remove moons from the Planetarium so I can correct my findings",
+    "description": "",
+    "id": "as-a-user-i-want-to-remove-moons-from-the-planetarium-so-i-can-correct-my-findings",
+    "keyword": "Feature",
+    "uri": "classpath:features/US5/MoonDeletion.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Planet deletion starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 68236200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.the_user_is_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 127942500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on planet deletion",
+            "match": {
+              "location": "com.revature.steps.PlanetDeletionSteps.user_clicks_on_planet_deletion()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:17:01.925Z",
+        "before": [
+          {
+            "result": {
+              "duration": 19328400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Users can delete an existing planet",
+        "description": "",
+        "id": "as-a-user-i-want-to-remove-planets-from-the-planetarium-so-i-can-correct-my-findings;users-can-delete-an-existing-planet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 44153000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user provides valid planet data",
+            "match": {
+              "location": "com.revature.steps.PlanetDeletionSteps.user_provides_valid_planet_data()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73158800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "table will refresh",
+            "match": {
+              "location": "com.revature.steps.PlanetDeletionSteps.table_will_refresh()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Planet deletion starting actions",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 65012200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on Home page",
+            "match": {
+              "location": "com.revature.steps.PlanetCreationSteps.the_user_is_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 124431500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on planet deletion",
+            "match": {
+              "location": "com.revature.steps.PlanetDeletionSteps.user_clicks_on_planet_deletion()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-26T21:17:02.262Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12170400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.revature.steps.hooks.Hooks.resetDatabase()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Users can not delete a planet that does not exist",
+        "description": "",
+        "id": "as-a-user-i-want-to-remove-planets-from-the-planetarium-so-i-can-correct-my-findings;users-can-not-delete-a-planet-that-does-not-exist;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 50174200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user provides invalid planet name \"non existing planet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"non existing planet\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.revature.steps.PlanetDeletionSteps.user_provides_invalid_planet_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4013600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should get a browser alert saying \"Invalid planet name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid planet name\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.PlanetCreationSteps.user_should_get_a_browser_alert_saying(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a user I want to remove planets from the Planetarium so I can correct my findings",
+    "description": "",
+    "id": "as-a-user-i-want-to-remove-planets-from-the-planetarium-so-i-can-correct-my-findings",
+    "keyword": "Feature",
+    "uri": "classpath:features/US5/PlanetDeletion.feature",
     "tags": []
   }
 ]

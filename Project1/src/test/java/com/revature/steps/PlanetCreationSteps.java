@@ -35,20 +35,14 @@ public class PlanetCreationSteps {
 
     @Then("the table will refresh")
     public void the_table_will_refresh() {
-        TestRunner.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        TestRunner.wait.until(ExpectedConditions.presenceOfElementLocated(By.id("celestialTable")));
-
-
-        List<WebElement> tableRows = TestRunner.driver.findElements(By.tagName("tr"));
-        for (int i = 0; i < tableRows.size(); i++) {
-            System.out.println("This is what is inside of table rows: " + tableRows.get(i).toString());
-            List<WebElement> tableCols = tableRows.get(i).findElements(By.tagName("td"));
-            System.out.println("This is what is inside of table cols: " + tableCols.get(i).getText());
-        }
-        System.out.println("This is number of celestial Bodies after submitting valid data: " + TestRunner.homePage.getNumberOfCelestialRows());
-        System.out.println("This is number of celestial Bodies variable within method submitting valid data: " + tableRows.size());
-
-
+        TestRunner.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[2]/table/tbody/tr[6]")));
+        //TestRunner.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+        //List<WebElement> tableRows = TestRunner.driver.findElements(By.xpath("html/body/div[2]/table/tbody/tr[4]"));
+        String expectedPlanetInfo = "planet 3 Pluto 1";
+        String actualPlanetInfo = TestRunner.homePage.returnUpdateRowsForPlanetCreation().get(0).getText();
+        System.out.println("this is expected planet info " + expectedPlanetInfo);
+        System.out.println("this is actual planet info " + actualPlanetInfo);
+        Assert.assertEquals(expectedPlanetInfo,actualPlanetInfo);
     }
 
 

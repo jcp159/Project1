@@ -4,6 +4,7 @@ import com.revature.TestRunner;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ViewOwnedResourcesSteps {
@@ -15,6 +16,7 @@ public class ViewOwnedResourcesSteps {
     @Then("user should be at home page and will be able to see planets and moons")
     public void user_should_be_at_home_page_and_will_be_able_to_see_planets_and_moons() {
         try {
+            TestRunner.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[2]/table/tbody/tr[5]")));
             TestRunner.wait.until(ExpectedConditions.titleIs("Home"));
             Assert.assertEquals(String.format(
                             "Expected 'Welcome to the Home Page Batman', but got %s",
