@@ -30,7 +30,7 @@ The page follows a simple design pattern and while there is nothing wrong with a
 idea that the planetarium website is a made in mid 2000's
 
 # As a user I want to securely access my account, so I can interact with the Planetarium in a secure environment
-- Grade: 3  simple to use feature, only requires a username and password to login.  Feature works as expected with proper 
+- Grade: 4  simple to use feature, only requires a username and password to login.  Feature works as expected with proper 
 alert given when user provides invalid credentials.  Although a basic login feature it gets the jobs done, would be given a four
 if maybe there were more security features and a user interface overhaul.
 
@@ -54,7 +54,7 @@ input design for username and password.  Similar to the registration page I beli
 in the mid 2000's as most other website have a modern feel to them.
 
 # As a user I want to see my planets and moons added to the Planetarium, so I can track my findings
-- Grade: 3 When a user is logged in they are able to see all of their planets and moons just like the user says.  While the webpage looks 
+- Grade: 4 When a user is logged in they are able to see all of their planets and moons just like the user says.  While the webpage looks 
 bare bones it gets the job done of letting the user view their resources and not letting a user who is not logged in view resources on the 
 homepage.
 
@@ -78,7 +78,7 @@ looks ancient
 
 # As a user I want to add new planets and moons to the Planetarium, so I can update my findings
 
-- Grade: 2 When a user wants to add new planets and moons for the most part they can do that however if they try
+- Grade: 3 When a user wants to add new planets and moons for the most part they can do that however if they try
 to add a photo that is not in the JPEG/PNG format they will not be able to do so.  Now this sounds normal however
 the webpage will not give out an alert letting the user know if they provided a wrong file type and so
 the website will sit there waiting for the user to provide a valid file type.  When user does provide a valid file
@@ -111,7 +111,7 @@ The font for the webpage doesn't also help with how the page looks and the size 
 makes it hard to read.
 
 # As a user I want to remove planets and moons from the Planetarium, so I can correct my findings
-- Grade 3: When a user provides a valid name for a planet or moon, they should be able to delete that resource and should not 
+- Grade 4: When a user provides a valid name for a planet or moon, they should be able to delete that resource and should not 
 be able to see that resource on their homepage.  This feature was successfully implemented I did not see any defects while
 testing this user story, lastly my only gripe is the user interface for the feature other than that the feature did what it
 was supposed to do.
